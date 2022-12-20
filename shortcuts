@@ -1,0 +1,15 @@
+        #--IP ADDRESSES--
+        # x = lines.split(" ")[0]
+        # ipaddresses.append(x)
+
+        # #--DATES--
+        # y = lines.split(" ")[3]
+        # y = y.split(":")[0]
+        # dates.append(y)
+
+         #--TEST--
+        # a = lines.split('"')[1]
+        # a = z.split('"')[0]
+        # a = z.split(" ")[2]
+        # a = z.split(" ")
+        # files2 = lines.append(a)
