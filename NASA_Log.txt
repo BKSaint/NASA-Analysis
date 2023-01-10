@@ -1,0 +1,50 @@
+slip3-24.dialin.uic.edu - - [28/Jul/1995:12:02:51 -0400] "GET /images/KSC-logosmall.gif HTTP/1.0" 200 1204
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import numpy as np
+from collections import *
+
+mainlog = open("FixedNASA_Log")
+
+count = 0
+
+dates = []
+ipaddresses = []
+#slip3-24.dialin.uic.edu - - [28/Jul/1995:12:02:51 -0400] "GET /images/KSC-logosmall.gif HTTP/1.0" 200 1204
+
+
+try:
+    #--DATES--
+    for lines in mainlog:
+        if "12/Jul/1995" in lines:
+            x = lines.split(" ")[3]
+            x = x.split("1995:")[1]
+            x = x.split(" ")[0]
+            x = x.split(":")[0]
+            # x = x[0],":",x[1]
+            # x = "".join(x)
+            dates.append(x)
+except:
+    print(f"discontinued at {count}")
+    print(lines)
+
+
+x = []
+y = []
+
+
+
+keys = Counter(dates).keys()
+values = Counter(dates).values()
+
+for i in keys:
+    x.append(i)
+
+for i in values:
+    y.append(i)
+
+ 
+
+plt.plot(x, y)
+plt.xticks(rotation=30)
+plt.show()

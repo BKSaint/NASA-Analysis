@@ -13,3 +13,35 @@
         # a = z.split(" ")[2]
         # a = z.split(" ")
         # files2 = lines.append(a)
+
+        #--FILE EXTENSION--
+        # z = lines.split('"')[1]
+        # z = z.split(".")[1]
+        # z = z.split(" ")[0]
+        # if z == '0':
+        #     z = "(none)"
+        # files.append(z)
+        # count += 1
+
+
+
+
+
+# try:
+#     for lines in mainlog:
+#         #--IP ADDRESSES--
+#         x = lines.split(" ")[0]
+#         ipaddresses.append(x)
+#         count += 1
+# except:
+#     print(f"discontinued at {count}")
+
+
+# try:
+#  #--DATES--
+#     for lines in mainlog:
+#         x = lines.split(" ")[3]
+#         x = x.split(":")[0]
+#         dates.append(x)
+# except:
+#     print(f"discontinued at {count}")

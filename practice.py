@@ -1,25 +1,10 @@
-import matplotlib as mpl                                                                                                                                                                                                                                                                                                                                                                                                     aaaa
-import matplotlib.pyplot as plt
-import numpy as npy
-from random import randint
+# import matplotlib as mpl
+# import matplotlib.pyplot as plt
+# import numpy as np
 
-x = []
-for i in range(5):
-    x.append(randint(1,100))
+# categories = ["apples", "oranges", "bananas", "pear", "kiwi"]
+# numbers = [10, 14, 77, 45, 23]
 
-
-y = [20, 40, 60, 80, 100]
-
-plt.subplot(3, 1, 1)
-plt.plot(x,y)
-
-plt.subplot(3, 1, 2)
-plt.hist(x)
-
-plt.subplot(3, 1, 3)
-plt.pie(y)
-
-plt.show()
-
-
+# plt.bar(categories, numbers, color=["red", "orange", "yellow", "green", "green"])
+# plt.show
 
