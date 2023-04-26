@@ -15,12 +15,14 @@ ticks = []
 try:
     #--DATES--
     for lines in mainlog:
+        
         x = lines.split(" ")[3] #Each split finds a unique part of the example above to split it by
         x = x.split(":")[0]
         x = x.split("[")[1]
         x = x.split("/Jul/1995")[0]
         x = int(x)
         dates.append(x)
+        count += 1
 except:
     print(f"discontinued at {count}")
     print(lines)
