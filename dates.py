@@ -42,7 +42,7 @@ for i in keys:
 for i in values:
     y.append(i)
 
-for i in x:
+for i in x: #This makes the X ticks of the graph go in multiples of 5
     if (int(i) % 7) == 0:
         ticks.append(i)
     else:

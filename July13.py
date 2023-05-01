@@ -17,7 +17,6 @@ time = []
 xb = []
 yb = []
 
-
 def filetypes():
 
     xb = []
@@ -78,22 +77,21 @@ def time():
         fulldict[count] = list(i)
         count += 1
     
-    fulldict[0][0] = "24"
+    fulldict[16][0] = '24'
     fulldict = sorted(fulldict)
-    print(fulldict)
-    
-    
+    for i in fulldict:
+        xb.append(i[0])
+        yb.append(i[1])
+
     plt.rcParams["font.family"] = 'monospace' 
     ax = plt.axes()
-    plt.bar(xb, yb, color="red", alpha=.8)
-    ax.set_facecolor(color='black')
-    plt.xticks(rotation=10, size='8')
+    ax.set_facecolor('black')
+    plt.grid(color="#313631")
+    plt.plot(xb, yb , alpha=.8, marker="o", markersize="10", color="red", linewidth="5") 
+    plt.xlabel("Hours of July 13th", size="15")
+    plt.ylabel("Activity", size="15")
+    plt.show()
 
-    # plt.bar(xp, yp)
-    # ax.set_facecolor(color='black')
-    # plt.xticks(rotation=45)
-    # plt.yticks(yaxis)
-    # plt.show()
 try:
     # # --DATES--
     for lines in mainlog:
@@ -111,7 +109,6 @@ except:
 
 mainlog.close()
 count = 0
-print(jul[0])
 
 try:
     for items in jul:
